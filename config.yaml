@@ -1,0 +1,35 @@
+# API Recon Configuration File
+# Usage: python3 api_recon.py --config config.yaml
+
+# ── Target ─────────────────────────────────────────────────────────────────
+url: http://your-api-endpoint.com/api/v1/resource
+
+# ── Authentication (pick one or both) ─────────────────────────────────────
+# Bearer token (JWT / OAuth)
+token: ""
+
+# API key (sent as X-API-Key header)
+api_key: ""
+
+# ── Extra custom headers ───────────────────────────────────────────────────
+headers:
+  # - "X-Auth-Token: YOUR_TOKEN_HERE"
+  # - "X-Custom-Header: value"
+  # - "X-Tenant-ID: your-tenant"
+
+# ── Notifications ──────────────────────────────────────────────────────────
+# Telegram setup:
+#   1. Create a bot via @BotFather → get token
+#   2. Add bot to channel/group → get chat_id
+#   3. For private chat, send /start to bot → get your chat_id from api.telegram.org/bot<token>/getUpdates
+tg_token: "" # "123456789:ABCdefGHI-jklMNOpqrSTUvwx"
+tg_chat: "" # "-100123456789" (channel) or "123456" (private)
+
+# ── AI Analysis ───────────────────────────────────────────────────────────
+#ai_key: "" # Anthropic Claude API key: sk-ant-api03-...
+ai_key: "" # Google Gemini API key: AIzaSyBQ-...
+# ── Output ─────────────────────────────────────────────────────────────────
+output: "." # Output directory
+
+# ── Options ────────────────────────────────────────────────────────────────
+timeout: 15 # Request timeout (seconds)
