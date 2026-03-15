@@ -18,15 +18,14 @@
 
 ## Background
 
-0xGRVapi is an automated API security recon tool I built for API Pentesting. It covers the OWASP API Top 10 and integrates with external tools when they're installed (ffuf, arjun, nikto, kiterunner). It doesn't try to replace Burp — it's meant to do the boring discovery and surface-level testing so you can focus your manual effort on what actually matters.
-
-It's not trying to replace Burp or manual testing. It's the thing you run first.
+0xgrvAPI is an automated API security recon tool I built for API Pentesting. It covers the OWASP API Top 10 and integrates with external tools when they're installed (ffuf, arjun, nikto, kiterunner). It doesn't try to replace Burp — it's meant to do the boring discovery and surface-level testing so you can focus your manual effort on what actually matters.
 
 ---
 
 ## What it covers
 
 Give it a target URL (and optionally a Swagger/OpenAPI spec) and it will:
+
 **Discovery**
 
 - 192 built-in API paths across REST, GraphQL, admin, debug, actuator, and spec endpoints
